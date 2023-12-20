@@ -8,41 +8,46 @@
 </head>
 <body>
     <div class="hero-container">
-        <p>budget app</p>
-        <img src="img/undraw_receipt_re_fre3 (3).svg" alt="logo">
+        <h1>budget app</h1>
+        <img src="img/header.svg" alt="logo">
     </div>
     <div class="main-container">
-        <h1>Sign up now!</h1>
         <form action="" method="get">
-            <div class="form-row">
-                <div class="form-element">
-                    <label for="first-name">First Name</label>
-                    <input id="first-name" name="first-name" type="text" />
+            <h1>Sign up now !</h1>
+            <section class="input-section">
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="first-name" type="text" placeholder="John" required />
+                    </div>
+                    <div class="form-element">
+                        <label for="last-name"> Last Name</label>
+                        <input id="last-name" name="last-name" type="text" placeholder="Doe" required />
+                    </div>
                 </div>
-                <div class="form-element">
-                    <label for="last-name"> Last Name</label>
-                    <input id="last-name" name="last-name" type="text" />
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="email@email.com" required />
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" type="text" placeholder="514-123-4567" required />
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-element">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" />
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder="" required />
+                    </div>
+                    <div class="form-element">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" placeholder="" required />
+                    </div>
                 </div>
-                <div class="form-element">
-                    <label for="phone">Phone</label>
-                    <input id="phone" name="phone" type="text" />
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-element">
-                    <label for="password">Password</label>
-                    <input id="password" name="password" type="password" />
-                </div>
-                <div class="form-element">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input id="confirm-password" name="confirm-password" type="password" />
-                </div>
+            </section>
+            <div class="form-row submit-container">
+                <button type="submit">Create account</button>
             </div>
         </form>
     </div>

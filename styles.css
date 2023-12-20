@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "dosis";
+    src: url(fonts/Dosis-VariableFont_wght.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +12,7 @@ body {
     display: flex;
     height: 100vh;
     background-color: #1d2b3a;
-}
-
-.background-container img {
-    width: 100%;
-    height: 100%;
+    font-family: "dosis";
 }
 
 .hero-container {
@@ -24,8 +25,10 @@ body {
     width: 40vw;
 }
 
-.hero-container p {
+.hero-container h1 {
     flex: 1;
+    font-size: 3rem;
+    text-transform: capitalize;
 }
 
 .hero-container img {
@@ -39,21 +42,18 @@ body {
     width: 60vw;
     background-color: #1d2b3a;
     padding: 30px 40px;
-    display: flex;
-    flex-direction: column;
 }
 
 .main-container h1 {
     color: white;
-    flex: 3;
     padding-left: 20px;
 }
 
 .main-container form {
     display: flex;
     flex-direction: column;
-    flex: 10;
     justify-content: center;
+    height: 100%;
 }
 
 .form-row {
@@ -80,5 +80,32 @@ body {
     border: none;
     border-bottom: 0.5px solid black;
     color: white;
-    height: 20px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.form-row input:not(:placeholder-shown):invalid {
+    border: 1px solid red;
+}
+
+.form-row input:valid {
+    border: 1px solid #1ae787d1;
+}
+
+.form-row input:focus {
+    border: 1px solid #6e6b886b;
+    outline: none;
+    box-shadow: none;
+}
+
+.submit-container {
+    padding: 0 20px;
+}
+
+.submit-container button {
+    background-color: #1ae787d1;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
 }
